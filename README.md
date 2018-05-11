@@ -1,5 +1,5 @@
 # MaterialDemo download
-[Material Design Demo](/debug/app-debug.apk)
+[Material Design Demo](https://github.com/rhylme/MeterialDemo/blob/master/debug/app-debug.apk?raw=true)
 
 # Material Document(Chinese)
 [Document](/md/1.md)
