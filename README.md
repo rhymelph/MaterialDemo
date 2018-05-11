@@ -14,23 +14,26 @@ Material Design Demo
 ### 3.FloatingActionButton
  <img src="/gif/FloatingActionButton.gif" width="240px" height="426px"/>
 
-### 4.FloatingActionButton
- <img src="/gif/FloatingActionButton.gif" width="240px" height="426px"/>
-
-### 5.SnackBar
+### 4.SnackBar
  <img src="/gif/SnackBar.gif" width="240px" height="426px"/>
 
-### 6.CoordinatorLayout
+### 5.CoordinatorLayout
  <img src="/gif/CoordinatorLayout.gif" width="240px" height="426px"/>
 
-### 7.BottomNavigationView
+### 6.AppbarLayout
+ <img src="/gif/AppbarLayout.gif" width="240px" height="426px"/>
+
+### 7.CollapsingToolBarLayout
+ <img src="/gif/CollapsingToolBarLayout.gif" width="240px" height="426px"/>
+ 
+### 8.BottomNavigationView
  <img src="/gif/BottomNavigationView.gif" width="240px" height="426px"/>
 
-### 8.TabLayout
+### 9.TabLayout
  <img src="/gif/TabLayout.gif" width="240px" height="426px"/>
 
-### 9.CircularReveal
+### 10.CircularReveal
  <img src="/gif/CircularReveal.gif" width="240px" height="426px"/>
 
-### 10.BottomSheetDialog
+### 11.BottomSheetDialog
  <img src="/gif/BottomSheetDialog.gif" width="240px" height="426px"/>
