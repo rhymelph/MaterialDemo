@@ -6,4 +6,4 @@ Material Design Demo
 
 ## 内容
 ### ToolBar
-![ToolBar](/gif/ToolBar.mp4)
+<img src="/gif/ToolBar.mp4" width="240px" height="426px"/>
