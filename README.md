@@ -21,10 +21,10 @@ Material Design Demo
  <img src="/gif/CoordinatorLayout.gif" width="240px" height="426px"/>
 
 ### 6.AppbarLayout
- <img src="/gif/AppbarLayout.gif" width="240px" height="426px"/>
+ <img src="/gif/AppBarLayout.gif" width="240px" height="426px"/>
 
 ### 7.CollapsingToolBarLayout
- <img src="/gif/CollapsingToolBarLayout.gif" width="240px" height="426px"/>
+ <img src="/gif/CollapsingToolbarLayout.gif" width="240px" height="426px"/>
  
 ### 8.BottomNavigationView
  <img src="/gif/BottomNavigationView.gif" width="240px" height="426px"/>
