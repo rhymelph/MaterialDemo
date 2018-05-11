@@ -1,5 +1,5 @@
-# MeterialDemo
-Material Design Demo
+# MeterialDemo download
+[Material Design Demo](/debug/app-debug.apk)
 
 ## 主页
 <img src="/gif/index.png" width="240px" height="426px"/>
