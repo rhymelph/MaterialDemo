@@ -1,6 +1,8 @@
-# MeterialDemo download
+# MaterialDemo download
 [Material Design Demo](/debug/app-debug.apk)
 
+# Material Document(Chinese)
+[Document](/md/1.md)
 ## 主页
 <img src="/gif/index.png" width="240px" height="426px"/>
 ## 内容
