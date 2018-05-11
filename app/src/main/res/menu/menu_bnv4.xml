@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="主页"
+        android:icon="@drawable/ic_home_black"/>
+    <item android:id="@+id/account"
+        android:title="通讯录"
+        android:icon="@drawable/ic_account_box_black"/>
+    <item android:id="@+id/shop_cart"
+        android:title="购物车"
+        android:icon="@drawable/ic_add_shopping_cart_black"/>
+    <item android:id="@+id/person"
+        android:title="我"
+        android:icon="@drawable/ic_person_outline_black"/>
+</menu>

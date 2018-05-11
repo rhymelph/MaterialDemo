@@ -1,0 +1,39 @@
+<resources>
+    <!-- app-res-values-styles.xml -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--标题栏颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyNavStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--返回键样式-->
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+    </style>
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <!--app-res-values-styles-->
+    <style name="MyToolBarTheme" parent="AppTheme">
+        <!--修改标题设置的文字颜色-->
+        <item name="android:textColorPrimary">@android:color/holo_blue_dark</item>
+        <!--按钮选中的颜色-->
+        <item name="colorAccent">@android:color/holo_blue_bright</item>
+        <!--按钮正常状态的颜色-->
+        <item name="android:colorControlNormal">@android:color/holo_blue_dark</item>
+        <!--Button按钮正常的颜色-->
+        <item name="android:colorButtonNormal">@android:color/holo_red_light</item>
+        <!--输入框文字颜色-->
+        <item name="android:editTextColor">@android:color/darker_gray</item>
+    </style>
+    <style name="MyPopuTheme" parent="ThemeOverlay.AppCompat">
+        <!--是否覆盖toolbar-->
+        <item name="overlapAnchor">false</item>
+        <!--字体颜色-->
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <!--背景颜色-->
+        <item name="android:colorBackground">@android:color/black</item>
+    </style>
+</resources>

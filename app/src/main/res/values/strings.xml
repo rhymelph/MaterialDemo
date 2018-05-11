@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MeterialDemo</string>
+    <string name="kaibao">*=====Meterial Design开苞=====*</string>
+    <string name="search">搜索</string>
+    <string name="cast">投射</string>
+    <string name="normal_item">普通的item</string>
+    <string name="select_1">选项1</string>
+    <string name="select_2">选项2</string>
+    <string name="switch_text">切换</string>
+    <string name="userInfo">个人信息</string>
+    <string name="color_theme">主题颜色</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>

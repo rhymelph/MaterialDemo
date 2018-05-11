@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--menu_nav.xml--><!--icon图标和title标题自己准备-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/userInfo"
+            android:checked="true"
+            android:icon="@drawable/ic_person_black"
+            android:title="@string/userInfo" />
+        <item
+            android:id="@+id/design"
+            android:icon="@drawable/ic_color_lens_black"
+            android:title="@string/color_theme" />
+    </group>
+    <item android:title="item">
+            <menu>
+                <group android:checkableBehavior="all">
+                    <item
+                        android:id="@+id/item_1"
+                        android:icon="@drawable/ic_chevron_right_black"
+                        android:title="item_1" />
+                    <item
+                        android:id="@+id/item_2"
+                        android:icon="@drawable/ic_chevron_right_black"
+                        android:title="item_2" />
+                </group>
+            </menu>
+        </item>
+</menu>

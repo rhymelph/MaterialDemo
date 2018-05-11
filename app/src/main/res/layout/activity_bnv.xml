@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/normal_bnv4"
+        android:layout_width="0dp"
+        app:menu="@menu/menu_bnv4"
+        app:elevation="5dp"
+        app:itemIconTint="@android:color/black"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:itemBackground="@android:color/background_light"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/normal_bnv3"
+        android:layout_width="0dp"
+        app:menu="@menu/menu_bnv3"
+        app:elevation="5dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/normal_bnv4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/all_visible_bnv4"
+        android:layout_width="0dp"
+        app:menu="@menu/menu_bnv4"
+        app:elevation="5dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/normal_bnv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/badges_visible_bnv4"
+        android:layout_width="0dp"
+        app:menu="@menu/menu_bnv4"
+        app:elevation="5dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/all_visible_bnv4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

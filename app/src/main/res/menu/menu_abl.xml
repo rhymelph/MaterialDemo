@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/snap"
+        android:title="snap"/>
+    <item android:id="@+id/scroll"
+        android:title="scroll"/>
+    <item android:id="@+id/enterAlways"
+        android:title="enterAlways"/>
+    <item android:id="@+id/enterAlwaysCollapsed"
+        android:title="enterAlwaysCollapsed"/>
+    <item android:id="@+id/exitUntilCollapsed"
+        android:title="exitUntilCollapsed"/>
+</menu>
