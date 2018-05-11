@@ -73,7 +73,7 @@ public class AppBarLayoutActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        AppBarLayout.LayoutParams params = (AppBarLayout.LayoutParams) appbar.getChildAt(0).getLayoutParams();
+        AppBarLayout.LayoutParams params = (AppBarLayout.LayoutParams)appbar.getChildAt(0) .getLayoutParams();
         switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
@@ -99,6 +99,7 @@ public class AppBarLayoutActivity extends AppCompatActivity {
                 params.setScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_EXIT_UNTIL_COLLAPSED| AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL);
                 break;
         }
+        appbar.getChildAt(0).setLayoutParams(params);
         return super.onOptionsItemSelected(item);
     }
 
