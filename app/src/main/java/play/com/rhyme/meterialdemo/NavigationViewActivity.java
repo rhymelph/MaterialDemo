@@ -2,12 +2,10 @@ package play.com.rhyme.meterialdemo;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -17,24 +15,22 @@ import android.widget.TextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import play.com.rhyme.meterialdemo.Utils.ToastUtils;
+import play.com.rhyme.meterialdemo.common.BaseActivity;
 
 /**
  * 作者: rhyme(rhymelph@qq.com).
  * 日期: 2018/5/3.
  * 描述: [].
  */
-public class NavigationViewActivity extends AppCompatActivity {
+public class NavigationViewActivity extends BaseActivity {
     public static final String TAG="NavigationViewActivity";
     private NavigationView nav;
     private Toolbar tl;
     private DrawerLayout dl;
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nav);
-        initView();
+    protected int getLayoutId() {
+        return R.layout.activity_nav;
     }
 
     @Override
@@ -51,7 +47,8 @@ public class NavigationViewActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void initView() {
+    @Override
+    protected void initView() {
         tl = (Toolbar) findViewById(R.id.tl);
         tl.setTitle("NavigationView");
         setSupportActionBar(tl);
@@ -113,4 +110,5 @@ public class NavigationViewActivity extends AppCompatActivity {
         nav.setItemTextColor(csl);
         nav.setItemIconTintList(csl);
     }
+
 }

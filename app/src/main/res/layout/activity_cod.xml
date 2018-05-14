@@ -4,11 +4,20 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     app:statusBarBackground="@android:color/darker_gray">
-    <include layout="@layout/listview"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        />
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/cod_tl"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+        <include layout="@layout/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+    </LinearLayout>
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/up_fab"
         app:rippleColor="@android:color/holo_blue_dark"

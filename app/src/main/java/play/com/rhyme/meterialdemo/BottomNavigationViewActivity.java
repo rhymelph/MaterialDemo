@@ -2,19 +2,11 @@ package play.com.rhyme.meterialdemo;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Path;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.design.internal.BottomNavigationMenuView;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AppCompatActivity;
-import android.text.Layout;
-import android.text.Spannable;
-import android.text.TextPaint;
-import android.text.style.URLSpan;
-import android.text.util.Linkify;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,28 +18,34 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+import play.com.rhyme.meterialdemo.common.BaseActivity;
+
 /**
  * 作者: rhyme(rhymelph@qq.com).
  * 日期: 2018/5/10.
  * 描述: [].
  */
-public class BottomNavigationViewActivity extends AppCompatActivity {
+public class BottomNavigationViewActivity extends BaseActivity {
 
     private BottomNavigationView all_visible_bnv4;
     private BottomNavigationView badges_visible_bnv4;
+    private Toolbar mBnvTl;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bnv);
-        initView();
+    protected int getLayoutId() {
+        return R.layout.activity_bnv;
     }
 
-    private void initView() {
+    @Override
+    protected void initView() {
+        mBnvTl = (Toolbar) findViewById(R.id.bnv_tl);
+        mBnvTl.setTitle("BottomNavigationView");
+        setToolBar(mBnvTl);
+
         all_visible_bnv4 = (BottomNavigationView) findViewById(R.id.all_visible_bnv4);
         BottomNavigationViewHelper.disableShiftingMode(all_visible_bnv4);
         all_visible_bnv4.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()){
+            switch (item.getItemId()) {
                 //todo 点击的id判断
                 default:
                     break;

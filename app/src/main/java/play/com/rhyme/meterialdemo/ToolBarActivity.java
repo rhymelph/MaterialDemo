@@ -1,9 +1,6 @@
 package play.com.rhyme.meterialdemo;
 
-import android.graphics.Color;
-import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.Menu;
@@ -14,21 +11,15 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import play.com.rhyme.meterialdemo.Utils.ToastUtils;
+import play.com.rhyme.meterialdemo.common.BaseActivity;
 
 /**
  * 作者: rhyme(rhymelph@qq.com).
  * 日期: 2018/5/2.
  * 描述: [].
  */
-public class ToolBarActivity extends AppCompatActivity {
+public class ToolBarActivity extends BaseActivity {
     private Toolbar tl;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toolbar);
-        initView();
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -103,7 +94,8 @@ public class ToolBarActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void initView() {
+    @Override
+    protected void initView() {
         tl = (Toolbar) findViewById(R.id.tl);
         tl.setTitle("Toolbar");//标题
 //        tl.setLogo(R.mipmap.ic_launcher);//图标
@@ -134,5 +126,10 @@ public class ToolBarActivity extends AppCompatActivity {
 //            actionBar.setDisplayShowTitleEnabled(false);
         }
 
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_toolbar;
     }
 }

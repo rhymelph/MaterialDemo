@@ -36,4 +36,12 @@
         <!--背景颜色-->
         <item name="android:colorBackground">@android:color/black</item>
     </style>
+    <style name="MyButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@android:color/white</item>
+    </style>
+    <style name="MyBottomButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
 </resources>

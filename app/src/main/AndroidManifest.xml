@@ -25,6 +25,9 @@
         <activity android:name=".CollapsingToolbarLayoutActivity"/>
         <activity android:name=".BottomNavigationViewActivity"/>
         <activity android:name=".TabLayoutViewActivity"/>
+        <activity android:name=".CircularRevealActivity"/>
+        <activity android:name=".BottomSheetDialogActivity"/>
+
 
     </application>
 

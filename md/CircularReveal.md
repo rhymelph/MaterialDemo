@@ -1,24 +1,24 @@
-package play.com.rhyme.meterialdemo.Utils;
+## CircularReveal
 
-import android.animation.Animator;
-import android.content.Context;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.util.DisplayMetrics;
-import android.view.View;
-import android.view.ViewAnimationUtils;
-import android.view.WindowManager;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.Animation;
+1. 介绍
+> 揭露动画，系统版本必须大于5.0
 
-/**
- * 作者: rhyme(rhymelph@qq.com).
- * 日期: 2018/5/11.
- * 描述: [].
- */
-public class CircularRevealUtil {
+2. 基本实现
+```java
+        Animator animator= ViewAnimationUtils
+        .createCircularReveal(
+        view,//目标view
+        x,//开始x
+        y,//开始y
+        0,//开始半径
+        cr);//结束半径
+        animator.setDuration(1000);
+        animator.start();
+```
 
-    //基本view揭露
+3. 集成
+```java
+//基本view揭露
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static void start(View lv){
         int cr=lv.getWidth()/2>lv.getHeight()/2?lv.getWidth()/2:lv.getHeight()/2;
@@ -80,4 +80,4 @@ public class CircularRevealUtil {
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         return animator;
     }
-}
+```

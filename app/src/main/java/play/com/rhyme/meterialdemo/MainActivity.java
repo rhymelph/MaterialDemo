@@ -1,14 +1,20 @@
 package play.com.rhyme.meterialdemo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.support.design.widget.BottomSheetDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.io.File;
+
 import play.com.rhyme.meterialdemo.Utils.BottomSheetDialogUtil;
-import play.com.rhyme.meterialdemo.Utils.CircularRevealUtil;
+import play.com.rhyme.meterialdemo.Utils.ToastUtils;
 
 public class MainActivity extends AppCompatActivity {
     String[] widgets = new String[]{"ToolBar"
@@ -29,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initView();
     }
+    private String path;
+
+
 
     private void initView() {
         list = (ListView) findViewById(R.id.list);
@@ -66,16 +75,16 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case "CircularReveal":
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        CircularRevealUtil.start(view);
+                        intent.setClass(this,CircularRevealActivity.class);
+                    }else{
+                        ToastUtils.showToast(this,"当前系统不支持CircularReveal");
                         return;
                     }
                     break;
                 case "BottomSheetDialog":
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        BottomSheetDialogUtil.show(this);
+                    intent.setClass(this, BottomSheetDialogActivity.class);
+
 //                        CircularRevealUtil.start();
-                        return;
-                    }
                     break;
 
             }

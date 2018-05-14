@@ -1,16 +1,12 @@
 package play.com.rhyme.meterialdemo;
 
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
@@ -23,29 +19,26 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+import play.com.rhyme.meterialdemo.common.BaseActivity;
+
 /**
  * 作者: rhyme(rhymelph@qq.com).
  * 日期: 2018/5/11.
  * 描述: [].
  */
-public class TabLayoutViewActivity extends AppCompatActivity {
+public class TabLayoutViewActivity extends BaseActivity {
 
     private Toolbar tab_tl;
     private TabLayout tab_layout;
     private ViewPager tab_vp;
     private List<View> viewList;
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tlv);
-        initView();
-    }
 
-    private void initView() {
+    @Override
+    protected void initView() {
         tab_tl = (Toolbar) findViewById(R.id.tab_tl);
         tab_tl.setTitle("TabLayout");
-        setSupportActionBar(tab_tl);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setToolBar(tab_tl);
+
         tab_layout = (TabLayout) findViewById(R.id.tab_layout);
 
         viewList=new ArrayList<>();
@@ -125,17 +118,12 @@ public class TabLayoutViewActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case android.R.id.home:
-                onBackPressed();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
+    protected int getLayoutId() {
+        return R.layout.activity_tlv;
     }
 
-    private  int i=0;
 
+    private  int i=0;
     public View getViews() {
         TextView textView=new TextView(this);
         ViewGroup.LayoutParams layoutParams=new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
@@ -147,6 +135,7 @@ public class TabLayoutViewActivity extends AppCompatActivity {
     }
 
     private static class TabLayoutHelper{
+
         private static void addBadge( TabLayout tabLayout,List<Integer> badges){
             try {
                 Field field=TabLayout.class.getDeclaredField("mTabs");

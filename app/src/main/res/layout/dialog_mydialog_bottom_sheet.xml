@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <View
+            android:id="@+id/touch_outside"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:soundEffectsEnabled="false"
+            tools:ignore="UnusedAttribute"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:background="@drawable/abc_btn_default_mtrl_shape"
+            android:elevation="5dp"
+            android:id="@+id/design_bottom_sheet"
+            style="?attr/bottomSheetStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            >
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bottom_fab"
+            android:src="@drawable/ic_favorite_border_while"
+            app:backgroundTint="@android:color/white"
+            app:layout_anchor="@id/design_bottom_sheet"
+            app:layout_anchorGravity="end|top"
+            app:useCompatPadding="true"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>
