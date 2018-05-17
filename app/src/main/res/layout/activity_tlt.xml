@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/til_tl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_user"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:counterTextAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        app:counterOverflowTextAppearance="@style/Base.TextAppearance.AppCompat"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiet_user"
+            android:maxLength="16"
+            android:drawableStart="@drawable/ic_account_box_black"
+            android:layout_width="match_parent"
+            android:hint="用户名"
+            android:inputType="text"
+            android:drawablePadding="8dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_account_box_black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_pass"
+        app:passwordToggleContentDescription="密码显示开关"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiet_pass"
+            android:drawableStart="@drawable/ic_lock_black"
+            android:layout_width="match_parent"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:drawablePadding="8dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_black" />
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>

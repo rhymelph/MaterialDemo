@@ -27,7 +27,7 @@
         <activity android:name=".TabLayoutViewActivity"/>
         <activity android:name=".CircularRevealActivity"/>
         <activity android:name=".BottomSheetDialogActivity"/>
-
+        <activity android:name=".TextInputLayoutActivity"/>
 
     </application>
 

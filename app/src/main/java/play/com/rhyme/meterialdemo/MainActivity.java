@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.design.widget.BottomSheetDialog;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -27,16 +29,16 @@ public class MainActivity extends AppCompatActivity {
             ,"BottomNavigationView"
             ,"TabLayout"
             ,"CircularReveal"
-            ,"BottomSheetDialog"};
+            ,"BottomSheetDialog"
+            ,"TextInputLayout"};
     private ListView list;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
     }
-    private String path;
-
 
 
     private void initView() {
@@ -83,12 +85,13 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case "BottomSheetDialog":
                     intent.setClass(this, BottomSheetDialogActivity.class);
-
-//                        CircularRevealUtil.start();
                     break;
-
+                case "TextInputLayout":
+                    intent.setClass(this, TextInputLayoutActivity.class);
+                    break;
             }
             startActivity(intent);
         });
+
     }
 }
