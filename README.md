@@ -41,5 +41,5 @@
 ### 11.BottomSheetDialog
  <img src="/gif/BottomSheetDialog.gif" width="240px" height="426px"/>
 
-### 12.BottomSheetDialog
+### 12.TextInputLayout
  <img src="/gif/TextInputLayout.gif" width="240px" height="426px"/>
