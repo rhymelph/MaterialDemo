@@ -73,6 +73,7 @@
 ```
 
 3. CollapsingToolbarLayout控件属性介绍
+
 | 属性 | 介绍 |
 | - | :-: |
 | collapsedTitleGravity | 可选top和bottom指定折叠状态标题文字位置 | 
@@ -85,6 +86,7 @@
 | layout_collapseParallaxMultiplier | 视差系数0.0-1.0 | 
 
 4. CollapsingToolbarLayout中的子控件属性介绍
+
 | 属性 | 介绍 |
 | - | :-: |
 | layout_collapseMode | pin 固定模式，parallax 视差模式 | 
